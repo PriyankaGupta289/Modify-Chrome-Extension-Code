@@ -1,0 +1,34 @@
+Once you've identified the hook, modify the code to save the fetched data to a JSON file.
+
+Here's an example of how the modified `fetchCoupons` function might look:
+
+
+javascript
+async function fetchCoupons() {
+ try {
+    const response = await fetch('https://example.com/coupons');
+    const coupons = await response.json();
+​
+    // Save the fetched data to a JSON file
+    const blob = new Blob([JSON.stringify(coupons)], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'coupons.json';
+    a.click();
+    URL.revokeObjectURL(url);
+​
+ } catch (error) {
+    console.error('Failed to fetch coupons:', error);
+ }
+}
+​
+
+
+In this modified version of the `fetchCoupons` function, the fetched data is saved to a JSON file using the following steps:
+
+1. Convert the fetched data to a JSON string using `JSON.stringify(coupons)`.
+2. Create a Blob object containing the JSON string.
+3. Create a URL object pointing to the Blob object.
+4. Create an anchor element (`<a>`) with its `href` attribute set to the URL object.
+5. Set the `download` attribute of the anchor element to the desired file name
