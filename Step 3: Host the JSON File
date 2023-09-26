@@ -1,0 +1,47 @@
+Host the JSON File:
+
+To host the JSON file containing the coupon data, you can follow these steps:
+
+1. Create a JSON file with the coupon data. For example, you can create a file named `coupons.json` with the following content:
+
+json
+[
+ {
+    "id": 1,
+    "code": "COUPON1",
+    "discount": 10
+ },
+ {
+    "id": 2,
+    "code": "COUPON2",
+    "discount": 20
+ }
+]
+​
+
+
+2. Host the JSON file in your preferred location. This can be your local machine (localhost) or any public URL (e.g., GitHub).
+
+- If you want to host the JSON file on your local machine, you can use a simple HTTP server like Python's built-in `http.server` module. Open a terminal, navigate to the directory containing the `coupons.json` file, and run the following command:
+
+
+bash
+python -m http.server 8080
+​
+
+
+This will start a local HTTP server on port 8080. You can access the `coupons.json` file by navigating to `http://localhost:8080/coupons.json` in your web browser.
+
+- If you want to host the JSON file on a public URL, you can use a cloud storage service like GitHub. To do this, create a new repository on GitHub, and then add the `coupons.json` file to the repository. Once you've added the file, you can access it via a public URL like `https://raw.githubusercontent.com/username/repo-name/main/coupons.json`.
+
+
+3. Once the JSON file is hosted, you can use the hosted URL in your coupon validation application to fetch the coupon data. For example, if you're hosting the JSON file on your local machine, you can use the following code to fetch the coupon data:
+
+
+javascript
+fetch('http://localhost:8080/coupons.json')
+ .then(response => response.json())
+ .then(coupons => {
+    // Process the fetched coupon data
+ });
+​
