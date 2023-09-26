@@ -1,0 +1,56 @@
+Modified Code: 
+
+javascript
+// Modified code
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+ res.send('Hello World!');
+});
+
+app.get('/coupons', (req, res) => {
+ const coupons = [
+    { code: 'COUPON1', discount: 10 },
+    { code: 'COUPON2', discount: 20 },
+    { code: 'COUPON3', discount: 30 },
+ ];
+
+ res.json(coupons);
+});
+
+app.listen(port, () => {
+ console.log(`Example app listening at http://localhost:${port}`);
+});
+
+
+1. Instructions for Testing:
+
+
+To test the modified code, follow these steps:
+
+1. Save the modified code in a file named `app.js`.
+
+2. Open a terminal window and navigate to the directory containing `app.js`.
+
+3. Install the required dependencies by running the following command:
+
+bash
+npm install express
+​
+
+
+4. Start the application by running the following command:
+
+bash
+node app.js
+​
+
+5. Open a web browser and navigate to `http://localhost:3000`. You should see the message "Hello World!".
+
+6. To test the `/coupons` endpoint, navigate to `http://localhost:3000/coupons` in your web browser. You should see a JSON response containing an array of coupon objects.
+
+7. To test the `/` endpoint, navigate to `http://localhost:3000` in your web browser. You should see the message "Hello World!".
+
+8. If you encounter any issues, please report them to the extension's issue tracker on GitHub.
