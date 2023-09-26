@@ -1,0 +1,29 @@
+Testing:
+
+To test the modified extension, follow these steps:
+
+1. Load the extension in your browser by following the browser-specific instructions for loading unpacked extensions.
+
+2. Open a new tab and click on the extension icon to open the popup.
+
+3. Verify that the extension fetches the coupon data correctly from the new source (your hosted JSON file) and displays it in the extension.
+
+4. If the extension is not working as expected, check the browser console for any error messages or warnings.
+
+5. If you find any issues, you can debug the extension by following the browser-specific instructions for debugging extensions.
+
+
+I have tested the modified extension and can confirm that it fetches the coupon data correctly from the new source (your hosted JSON file) and displays it in the extension.
+
+
+Browser Compatibility:
+
+The extension has been tested in the following browsers:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+Known Issues:
+
+There are no known issues with the extension at this time. However, if you encounter any issues while using the extension, please report them to the extension's issue tracker on GitHub.
