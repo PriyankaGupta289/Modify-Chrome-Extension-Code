@@ -1,0 +1,82 @@
+Here's an example of how you can append your name to one of the coupon codes in a JSON file:
+
+
+json
+{
+ "coupons": [
+    {
+      "code": "COUPON1",
+      "discount": 10
+    },
+    {
+      "code": "COUPON2",
+      "discount": 20
+    },
+    {
+      "code": "COUPON3",
+      "discount": 30
+    },
+    {
+      "code": "COUPON4",
+      "discount": 40
+    },
+    {
+      "code": "COUPON5",
+      "discount": 50
+    },
+    {
+      "code": "COUPON6",
+      "discount": 60
+    },
+    {
+      "code": "COUPON7",
+      "discount": 70
+    },
+    {
+      "code": "COUPON8",
+      "discount": 80
+    },
+    {
+      "code": "COUPON9",
+      "discount": 90
+    },
+    {
+      "code": "COUPON10",
+      "discount": 100
+    }
+ ]
+}
+​
+
+
+In this example, I've appended my name to the coupon code "COUPON10". The updated JSON file would look like this:
+
+json
+{
+ "coupons": [
+    {
+      "code": "COUPON1",
+      "discount": 10
+    },
+    {
+      "code": "COUPON2",
+      "discount": 20
+    },
+    {
+      "code": "COUPON3",
+      "discount": 30
+    },
+    {
+      "code": "COUPON4",
+      "discount": 40
+    },
+    {
+      "code": "COUPON5",
+      "discount": 50
+    },
+    {
+      "code": "COUPON6",
+      "discount": 60
+    },
+    {
+      "code
