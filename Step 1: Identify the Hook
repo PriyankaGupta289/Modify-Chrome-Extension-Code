@@ -1,0 +1,12 @@
+1) Identify the Hook:
+
+javascript
+async function fetchCoupons() {
+ try {
+    const response = await fetch('https://example.com/coupons');
+    const coupons = await response.json();
+    // Process the fetched coupons and update the extension's UI
+ } catch (error) {
+    console.error('Failed to fetch coupons:', error);
+ }
+}
