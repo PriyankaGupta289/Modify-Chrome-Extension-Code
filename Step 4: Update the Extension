@@ -1,0 +1,33 @@
+To update the extension code, you can follow these steps:
+
+1. Open the extension's background script file (e.g., `background.js`).
+
+2. Replace the hardcoded coupon data with a function that fetches the coupon data from the hosted JSON file. 
+
+For example:
+
+javascript
+async function fetchCouponData() {
+ const response = await fetch('https://raw.githubusercontent.com/username/repo-name/main/coupons.json');
+ const data = await response.json();
+ return data;
+}
+​
+
+
+3. Update the code that processes the coupon data to use the fetched coupon data instead of the hardcoded coupon data. For example:
+
+
+javascript
+async function processCouponData() {
+ const couponData = await fetchCouponData();
+ // Process the coupon data as needed
+}
+​
+
+
+4. Save the changes to the background script file.
+
+5. Reload the extension in your browser to apply the changes.
+
+Now, the extension should fetch the coupon data from the hosted JSON file instead of using the hardcoded coupon data.
